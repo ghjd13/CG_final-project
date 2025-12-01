@@ -222,8 +222,8 @@ namespace Game {
 
             // 다트 텍스처과 Tint 설정 (tintFactor 사용)
             if (displayPlayer == 2) {
-                g_Shader->setVec3("objectColor", glm::vec3(0.0f, 0.6f, 1.0f));
-                g_Shader->setFloat("tintFactor", 1.0f);
+                g_Shader->setVec3("objectColor", glm::vec3(1.0f, 1.0f, 1.0f));
+                g_Shader->setFloat("tintFactor", 0.0f);
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texDartBlue ? texDartBlue : texDart);
             } else {
